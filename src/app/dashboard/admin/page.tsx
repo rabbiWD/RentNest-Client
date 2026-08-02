@@ -20,8 +20,8 @@ import {
   Sparkles,
   Search,
   Calendar,
-  ArrowRight,
-  FileText,
+  // ArrowRight,
+  // FileText,
 } from "@/components/ui/icons";
 
 interface PlatformUser {
@@ -44,7 +44,7 @@ export default function AdminDashboardPage() {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   useEffect(() => {
-    setIsLoading(true);
+    // setIsLoading(true);
     fetchApi("/admin/users")
       .then((res) => {
         if (res.data && Array.isArray(res.data)) {
