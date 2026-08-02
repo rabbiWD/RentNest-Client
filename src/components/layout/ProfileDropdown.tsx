@@ -94,44 +94,7 @@ export const ProfileDropdown: React.FC = () => {
             </div>
           </div>
 
-          {/* Quick Role Switcher */}
-          <div className="py-2.5 border-b border-slate-100 space-y-1.5">
-            <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 block px-2">
-              Switch Role Portal
-            </span>
-            <div className="grid grid-cols-3 gap-1 bg-slate-100 p-1 rounded-xl">
-              <button
-                onClick={() => handleRoleSwitch("TENANT")}
-                className={`py-1 text-[11px] font-bold rounded-lg transition-all ${
-                  user.role === "TENANT"
-                    ? "bg-white text-blue-600 shadow-xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                Tenant
-              </button>
-              <button
-                onClick={() => handleRoleSwitch("LANDLORD")}
-                className={`py-1 text-[11px] font-bold rounded-lg transition-all ${
-                  user.role === "LANDLORD"
-                    ? "bg-white text-blue-600 shadow-xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                Landlord
-              </button>
-              <button
-                onClick={() => handleRoleSwitch("ADMIN")}
-                className={`py-1 text-[11px] font-bold rounded-lg transition-all ${
-                  user.role === "ADMIN"
-                    ? "bg-white text-blue-600 shadow-xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                Admin
-              </button>
-            </div>
-          </div>
+         
 
           {/* Navigation Links */}
           <div className="space-y-1 py-1">
