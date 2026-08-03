@@ -118,7 +118,7 @@ export default function RegisterPage() {
             </CardHeader>
             <CardContent className="space-y-6">
               {/* Role Selection Cards */}
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 gap-3">
                 <button
                   type="button"
                   onClick={() => setRole("TENANT")}
@@ -147,7 +147,7 @@ export default function RegisterPage() {
                   <div className="text-[11px] text-slate-500 line-clamp-1">List & Manage</div>
                 </button>
 
-                <button
+                {/* <button
                   type="button"
                   onClick={() => setRole("ADMIN")}
                   className={`p-3.5 rounded-2xl border text-left transition-all ${
@@ -159,7 +159,7 @@ export default function RegisterPage() {
                   <div className="text-xl mb-1">🛡️</div>
                   <div className="font-bold text-xs text-slate-900">Admin</div>
                   <div className="text-[11px] text-slate-500 line-clamp-1">Moderator</div>
-                </button>
+                </button> */}
               </div>
 
               {/* Status Alert */}
