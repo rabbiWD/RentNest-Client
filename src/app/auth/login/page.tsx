@@ -51,9 +51,11 @@ function LoginForm() {
           ? "/dashboard/landlord"
           : "/dashboard/tenant");
 
-      setTimeout(() => {
-        router.push(targetDashboard);
-      }, 800);
+      // setTimeout(() => {
+      //   router.push(targetDashboard);
+      // }, 800);
+      router.replace(targetDashboard);
+      router.refresh();
     } catch (err: any) {
       setError(err.message || "Invalid credentials. Please try again.");
     } finally {
