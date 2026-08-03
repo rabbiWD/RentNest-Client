@@ -274,7 +274,7 @@ export default function CreatePropertyPage() {
                   className="px-6 py-3 text-sm font-bold shadow-md shadow-blue-500/20"
                   isLoading={isLoading}
                 >
-                  Publish Listing 🚀
+                  Publish Listing
                 </Button>
               </div>
             </form>
